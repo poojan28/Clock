@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: radial-gradient(#3D2527, #1C1C1C);
+  height: 100vh;
+}
+
+.my-image {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff url(/pujan.png);
+  background-size: cover;
+  border-radius: 50%;
+  z-index: 12;
+}
+
+.clock {
+  width: 350px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff url(/clock.png);
+  background-blend-mode: darken;
+  background-size: cover;
+  border-radius: 50%;
+  border: 20px solid #fff;
+  position: relative;
+  -webkit-box-shadow: inset 10px 0 30px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 0 4px white;
+          box-shadow: inset 10px 0 30px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 0 4px white;
+}
+
+.clock:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #848484;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 20;
+}
+
+.clock:after {
+  content: "";
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: url(/pujan.png) center no-repeat;
+  background-position: -70px -50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+  position: absolute;
+}
+
+.clock .hour, .clock .hr {
+  width: 160px;
+  height: 160px;
+}
+
+.clock .min, .clock .mn {
+  width: 190px;
+  height: 190px;
+}
+
+.clock .sec, .clock .sc {
+  width: 230px;
+  height: 230px;
+}
+
+.clock .hr, .clock .mn, .clock .sc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.clock .hr:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 80px;
+  background: #848484;
+  z-index: 5;
+  border-radius: 6px 6px 0 0;
+}
+
+.clock .mn:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 90px;
+  background: #d6d6;
+  z-index: 6;
+  border-radius: 6px 6px 0 0;
+}
+
+.clock .sc:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background: #ff6767;
+  z-index: 7;
+  border-radius: 6px 6px 0 0;
+}
+/*# sourceMappingURL=style.css.map */

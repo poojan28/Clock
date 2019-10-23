@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    //  background: #68a4ff;
+    //  background: #f5cc15;
+    background: radial-gradient(#3D2527, #1C1C1C);
+    height: 100vh;
+    
+    
+    
+}
+.my-image{
+    width:350px;
+    height:350px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff url(/pujan.png);  
+    background-size: cover;
+    border-radius: 50%;
+    z-index:12;
+}
+
+.clock{
+    width:350px;
+    height:350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff url(/clock.png);
+    background-blend-mode: darken;
+    background-size: cover;
+    border-radius: 50%;
+    border:20px solid #fff;
+    position: relative;
+    box-shadow: inset  10px 0 30px rgba(0, 0, 0, 0.1),
+                    0 20px 20px rgba(0,0,0,0.2),
+                    0 0 0 4px rgba(255,255,255,1);
+    &:before{
+        content:"";
+        position: absolute;
+        width:15px;
+        height:15px;
+        background:#848484;
+        border:2px solid #fff;
+        border-radius: 50%;
+        z-index: 20;
+        
+    }
+    &:after{
+        content:"";
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1; 
+        background:url(/pujan.png) center no-repeat;
+        background-position: -70px -50px;
+        border:2px solid #fff;
+        border-radius: 50%;
+       
+        
+    }
+   
+    .hour,
+    .min,
+    .sec{
+        position:absolute;  
+    }
+    .hour,.hr{
+        width:160px;
+        height:160px;
+    }
+    .min,.mn{
+        width:190px;
+        height:190px;
+    }
+    .sec,.sc{
+        width:230px;
+        height:230px;
+    }
+    .hr,.mn,.sc{
+        display:flex;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .hr:before{
+        content:"";
+        position:absolute;
+        width:8px;
+        height:80px;
+        background:#848484;
+        z-index:5;
+        border-radius: 6px 6px 0 0;
+    }
+    .mn:before{
+        content:"";
+        position:absolute;
+        width:4px;
+        height:90px;
+        background:#d6d6;
+        z-index:6;
+        border-radius: 6px 6px 0 0;
+    }
+    .sc:before{
+        content:"";
+        position:absolute;
+        width:2px;
+        height:150px;
+        background:#ff6767;
+        z-index:7;
+        border-radius: 6px 6px 0 0;
+    }
+    
+    
+
+}
+
+
